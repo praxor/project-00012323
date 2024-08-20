@@ -2,6 +2,7 @@ html {
     background: url(./media/bricks.png);
     font-family: "Roboto", sans-serif;
     font-size: 20px;
+    scrollbar-width: none;
 }
 
 @font-face {
