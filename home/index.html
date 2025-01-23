@@ -1,63 +1,156 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en" data-bs-theme="dark">
     <head>
+        <title>The Praxor Website</title>
         <link rel="icon" href="../media/oraxor.png">
-        <title>praxor website :3</title>
-        <link rel="stylesheet" href="../style.css">
-        
-        <!-- tags and shit -->
-        <meta name="title" content="praxor website :3" />
-        <meta name="description" content="come look at my silly page for the 69,420th time with me! :D" />
-
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://praxor.wtf/home" />
-        <meta property="og:title" content="praxor website :3" />
-        <meta property="og:description" content="come look at my silly page for the 69,420th time with me! :D" />
-        <meta property="og:image" content="https://praxor.wtf/media/psychotic%20episode%202.png" />
-
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://praxor.wtf/home" />
-        <meta property="twitter:title" content="praxor website :3" />
-        <meta property="twitter:description" content="come look at my silly page for the 69,420th time with me! :D" />
-        <meta property="twitter:image" content="https://praxor.wtf/media/psychotic%20episode%202.png" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            .navbar-brand {
+                transform: translateX(-50%);
+                left: 50%;
+                position: absolute;
+            }
+            .jumbotron-background-gradient {
+                background: linear-gradient(190deg, rgba(104,34,179,10) 0%, rgba(0,0,0,1) 100%);
+                background-size: 200% 200%;
+                animation: bg-pan-top;
+            }
+            @keyframes bg-pan-top {
+                0% {
+                    background-position: 50% 100%;
+                }
+                100% {
+                    background-position: 50% 0%;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="main">
-            <div class="title">
-                <h1 style="font-size:40px;">welcome to the praxor website</h1>
-                <hr style="border-color:black;width:85%">
-            </div>
-            <div class="nav">
-                <img src="../media/bestview.gif">
-                <img src="../media/berh.jpg" height=30px>
-                <img src="../media/jade.jpg" height=30px>
-                <img src="../media/turio.jpg" height=30px>
-                <img src="../media/blue.png" height=30px width=30px>
-                <img src="../media/nxne.gif" height=30px>
-                <img src="../media/froggy.jpg" height=30px>
-                <img src="../media/bitmap.gif">
-            </div>
-            <br>
-            <div class="midcontainer">
-                <div class="midchild">
-                    <p>TODO:</p>
-                    <ul>
-                        <li>die</li>
-                        <li>die pt. 2</li>
-                        <li>clean website</li>
+        <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top shadow" style="background-color: #6822b3">
+            <a class="navbar-brand">
+                <img src="https://praxor.wtf/media/oraxor.png" width="35" height="35" d-inline-block align-text-top>
+            </a>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#praxorNavbar" aria-controls="praxorNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="praxorNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="alreadyHome">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://praxor.wtf/art">Art Album</a></li>
+                                <li><a class="dropdown-item" href="https://praxor.wtf/merch">Merchandise</a></li>
+                                <li><a class="dropdown-item" href="https://praxor.wtf/supporters">My Supporters</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://praxor.wtf/thanks">Special Thanks</a></li>
+                                <li><a class="dropdown-item" href="https://praxor.wtf/about">About</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://praxor.wtf/contact">Contact</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="midchild">
-                    <p style="color:limegreen">&gt;new website, don't mind me</p>
-                    <p>i'll get there soon</p>
-                    <video src="../media/catttt.mp4" width="250px" controls></video>
+                    <i><span id="clock" class="text-right" href="#" style="font-family: Consolas, monospace;color:#777777"></span></i>
                 </div>
             </div>
-            <div id="crazysexyhiddenboxrealthing">
-                <p class="rainbow rainbow_text_animated">!!! thank you for supporting me :^) !!!</p>
+        </nav>
+        <main>
+            <div class="px-4 py-4 text-center jumbotron-background-gradient">
+                <div class="container rounded shadow-lg" style="background-color: rgba(0,0,0,0.5);">
+                    <div class="px-4 py-5 my-5">
+                        <img src="https://praxor.wtf/media/oraxor.png">
+                        <h1 class="display-5 fw-bold text-body-emphasis" style="font-family: Consolas, monospace;"><i>The Praxor Website</i></h1>
+                        <p class="lead text-body-secondary" style="font-family: Consolas, monospace;">Welcome to my website. Feel free to stay a while and <i><a style="color: rgb(150,150,150);" href="https://praxor.wtf/media/chinesefrog.mp4" target="_blank">scroll</a></i>.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="py-5 px-5 p-5">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex px-5 py-5">
+                        <div class="col">
+                            <div class="card shadow border-0">
+                                <img src="https://praxor.wtf/media/praxor1.png" class="card-img-top" alt="praxor">
+                                <div class="card-body">
+                                    <h5 class="card-title">Who am I?</h5>
+                                    <p class="card-text">Hello! My name is praxor, and I do a lot of things, even if it's all at once. Very unbalanced, I know I'm insane.</p>
+                                    <a href="https://praxor.wtf/about" class="btn btn-primary">about my website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow border-0">
+                                <img src="https://praxor.wtf/media/praxor2.png" class="card-img-top" alt="praxor">
+                                <div class="card-body">
+                                    <h5 class="card-title">What do I do?</h5>
+                                    <p class="card-text">I play games, draw sometimes, your mom, and occasionally make YouTube videos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow border-0">
+                                <img src="https://praxor.wtf/media/fanart10.png" class="card-img-top" alt="what the hell">
+                                <div class="card-body">
+                                    <h5 class="card-title">Want more praxor?</h5>
+                                    <p class="card-text">Too bad, you can't have more of me. However, you can always check out my socials on my contact page.</p>
+                                    <a class="btn btn-primary" href="https://praxor.wtf/contact">contact me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <footer class="align-items-center py-3 my-4 border-top p-2">
+                    <p class="text-body-secondary text-center">• © 2023-2024 The Praxor Website •</p>
+                </footer>
+            </div>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="alreadyHomeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="https://praxor.wtf/media/oraxor.png" width="7%" height="7%" class="rounded me-2" alt="praxor website logo">
+                        <strong class="me-auto">The Praxor Website</strong>
+                        <small>now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        You're already on the home page!
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <script>
+            const toastTrigger = document.getElementById('alreadyHome')
+            const toastTrigger2 = document.getElementById('alreadyHome2')
+            const alreadyHomeToast = document.getElementById('alreadyHomeToast')
+            const alreadyHomeToast2 = document.getElementById('alreadyHomeToast')
+
+            if (toastTrigger) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(alreadyHomeToast)
+                toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+              })
+            }
+            if (toastTrigger2) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(alreadyHomeToast)
+                toastTrigger2.addEventListener('click', () => {
+                    toastBootstrap.show()
+                })
+            }
+        </script>
+        <script type="text/javascript">
+            var clockElement = document.getElementById('clock');
+            function clock() {
+                clockElement.textContent = new Date().toString();
+            }
+            setInterval(clock, 1000);
+        </script>
     </body>
 </html>
